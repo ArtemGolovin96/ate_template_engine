@@ -1,9 +1,9 @@
 
-export class Templator {
+class Templator {
     // template - string
-    constructor(template) {
+    constructor(template, regexp = /\{\{(.*?)\}\}/gi) {
         this.template = template;
-        this.TEMPLATE_REGEXP = /\{\{(.*?)\}\}/gi;
+        this.TEMPLATE_REGEXP = regexp;
     }
 
     complite(ctx) {
@@ -15,5 +15,7 @@ export class Templator {
     }
 
 }
+
+export default Templator
 
 

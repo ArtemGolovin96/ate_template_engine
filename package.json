@@ -2,11 +2,12 @@
   "name": "ate_templator",
   "version": "1.0.0",
   "description": "template enjine by artem",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "startndm": "nodemon app.js"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,14 @@
   },
   "homepage": "https://github.com/ArtemGolovin96/ate_template_engine#readme",
   "dependencies": {
-    "nodemon": "^2.0.15"
+    "webpack": "^5.68.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^8.8.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
   }
 }
