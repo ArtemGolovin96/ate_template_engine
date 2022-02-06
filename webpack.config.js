@@ -5,13 +5,13 @@ module.exports = {
     './index.js',
   ],
   output: {
-    filename: './js/bundle.js'
+    filename: 'dist/bundle.js'
   },
   devtool: "source-map",
   module: {
     rules: [{
         test: /\.js$/,
-        include: path.resolve(__dirname, 'src/js'),
+        include: path.resolve(__dirname, 'src'),
         use: {
           loader: 'babel-loader',
           options: {
