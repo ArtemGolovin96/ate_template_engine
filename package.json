@@ -1,0 +1,29 @@
+{
+  "name": "ate_templator",
+  "version": "1.0.0",
+  "description": "template enjine by artem",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "startndm": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtemGolovin96/ate_template_engine.git"
+  },
+  "keywords": [
+    "html",
+    "templte",
+    "engine"
+  ],
+  "author": "artem golovin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtemGolovin96/ate_template_engine/issues"
+  },
+  "homepage": "https://github.com/ArtemGolovin96/ate_template_engine#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
