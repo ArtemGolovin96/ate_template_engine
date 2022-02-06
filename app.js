@@ -1,2 +1,6 @@
-export const Templator = require("./Templator");
-export const getController = require("./utils/getController")
+
+export {Templator} from "./Templator.js";
+export {getController} from "./utils/getController.js"
+
+
+console.log(Templator)
