@@ -1,6 +1,6 @@
 
 
-export default class Templator {
+class Templator {
     // template - string
     constructor(template) {
         this.template = template;
@@ -15,5 +15,7 @@ export default class Templator {
 
     }
 
-
 }
+
+module.exports = Templator
+
