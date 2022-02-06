@@ -1,5 +1,5 @@
 
-class Templator {
+export class Templator {
     // template - string
     constructor(template, regexp = /\{\{(.*?)\}\}/gi) {
         this.template = template;
@@ -10,12 +10,11 @@ class Templator {
         return this._compileTemplate(ctx);
     }
 
-    _compileTemplate(ctx) {
+    // _compileTemplate(ctx) {
 
-    }
+    // }
 
 }
 
-export default Templator
 
 

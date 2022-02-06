@@ -1,5 +1,5 @@
 
-const getController = (obj, path, defaultValue) => {
+export const getController = (obj, path, defaultValue) => {
     const keys = path.split('.');
     let result = obj;
     for (let key of keys) {
@@ -14,4 +14,3 @@ const getController = (obj, path, defaultValue) => {
     // return keys.reduce((result, key) => result[key], obj);
 }; 
 
-export default getController;
